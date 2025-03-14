@@ -205,11 +205,54 @@ p {
   margin-top: 58px
 }
 
-
   #hero-headline-container .highlight {
     color:  var(--primary-color);
 }
 
+/* Trusted brands section */
+#trusted-brands {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+padding: 50px 20px;
+}
+
+#trusted-brands p {
+ font-size : 0.75rem;
+ line-height: 18px;
+ color : #000000
+}
+
+#trusted-brands #brands-logo-wrp {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+#trusted-brands #brands-logo-wrp img {
+  width: 100%; 
+  object-fit: contain; 
+  /* height: 22px;  */
+}
+#google-image {
+  max-width: 66px; 
+}
+#atlassian-image {
+  max-width: 104px; 
+}
+#canon-image {
+  max-width: 76px; 
+}
+#walmart-image {
+  max-width: 87px; 
+}
+#amazon-image {
+  max-width: 62px; 
+}
 
 /* ------------------------------------- media queries------------------------------------- */
 
@@ -225,6 +268,7 @@ p {
   #hero {
     padding: 80px 60px; 
   }
+
   
 }
 
@@ -266,6 +310,45 @@ p {
   #hero-right-image-mobile,  #hero-left-image-mobile {
     display: none;
   }
+  /* trusted-brands-section */
+
+  #trusted-brands {
+    flex-direction: row;
+    gap: 50px;
+    padding: 50px 60px;
+    }
+    #trusted-brands #brands-logo-wrp {
+      flex-wrap: nowrap;
+      gap: 50px;
+    }
+    /* #trusted-brands #brands-logo-wrp img {
+      height: 32px; 
+    } */
+    #google-image {
+      max-width: 70px; 
+      height: 32px; 
+    }
+    #atlassian-image {
+      max-width: 100px; 
+      height: 17px; 
+    }
+    #canon-image {
+      max-width: 70px; 
+      height: 20px; 
+    }
+    #walmart-image {
+      max-width: 100px; 
+      height: 30px; 
+    }
+    #amazon-image {
+      max-width: 29px; 
+    }
+   
+    #trusted-brands p {
+      font-size : 1rem;
+      line-height: 24px;
+     }
+    
 }
 
 /* Desktops (1280px and up) */
@@ -275,12 +358,39 @@ p {
   h1 {
     font-size: 4rem;
   }
+      /* trusted brands section */
+
+      #google-image {
+        max-width: 97px; 
+      }
+      #atlassian-image {
+        max-width: 135px; 
+      }
+      #canon-image {
+        max-width: 95px; 
+      }
+      #walmart-image {
+        max-width: 129px; 
+      }
+      #amazon-image {
+        max-width: 95px; 
+      }
+      #trusted-brands {
+        flex-direction: row;
+        gap: 64px;
+        padding: 50px 100px;
+        }
+        #trusted-brands #brands-logo-wrp {
+          gap: 64px;
+        }
+    
+}
 
   @media (min-width: 1366px) {
     /* hero section */
     #hero {
       padding: 180px 160px; 
     }
+
    
-}
 }
