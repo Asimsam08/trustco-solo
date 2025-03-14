@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +16,7 @@
 
 /* Global Font Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -184,10 +185,12 @@ p {
 
 #hero-right-image-mobile {
   width: 100%; 
-  max-width: 174px; 
+  max-width: 168px; 
   aspect-ratio: 16 / 9; 
   object-fit: contain; 
   height: 279px; 
+  margin-top:28px;
+ 
 }
 
 #hero-left-image-mobile {
@@ -200,8 +203,9 @@ p {
 
 #hero-mobile-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 58px
 }
 
@@ -236,22 +240,26 @@ padding: 50px 20px;
 #trusted-brands #brands-logo-wrp img {
   width: 100%; 
   object-fit: contain; 
-  /* height: 22px;  */
 }
 #google-image {
   max-width: 66px; 
+    height: 22px; 
 }
 #atlassian-image {
   max-width: 104px; 
+  height: 13px; 
 }
 #canon-image {
   max-width: 76px; 
+  height: 16px; 
 }
 #walmart-image {
   max-width: 87px; 
+  height: 20px; 
 }
 #amazon-image {
   max-width: 62px; 
+  height: 19px; 
 }
 
 /* ------------------------------------- media queries------------------------------------- */
@@ -269,7 +277,14 @@ padding: 50px 20px;
     padding: 80px 60px; 
   }
 
-  
+    /* trusted-brands-section */
+    #trusted-brands p {
+      font-size : 1rem;
+      line-height: 24px;
+     }
+     #trusted-brands #brands-logo-wrp {
+      gap: 34px;
+     }
 }
 
 /* Small Laptops (1024px and up) */
@@ -321,9 +336,7 @@ padding: 50px 20px;
       flex-wrap: nowrap;
       gap: 50px;
     }
-    /* #trusted-brands #brands-logo-wrp img {
-      height: 32px; 
-    } */
+
     #google-image {
       max-width: 70px; 
       height: 32px; 
@@ -341,14 +354,10 @@ padding: 50px 20px;
       height: 30px; 
     }
     #amazon-image {
-      max-width: 29px; 
+      max-width: 80px;
+      height: 29px; 
     }
    
-    #trusted-brands p {
-      font-size : 1rem;
-      line-height: 24px;
-     }
-    
 }
 
 /* Desktops (1280px and up) */
@@ -359,6 +368,9 @@ padding: 50px 20px;
     font-size: 4rem;
   }
       /* trusted brands section */
+          /* #trusted-brands #brands-logo-wrp img {
+      max-width: 135px;
+    } */
 
       #google-image {
         max-width: 97px; 
@@ -391,6 +403,10 @@ padding: 50px 20px;
     #hero {
       padding: 180px 160px; 
     }
+    #trusted-brands {
+      gap: 100px;
+
+      }
 
    
 }
