@@ -83,6 +83,7 @@ button {
   display: flex;
   flex-direction: column;
   padding: 40px 21px 37px;
+  margin-top:75px;
 }
 
 #hero-headline-container {
@@ -269,6 +270,9 @@ padding: 50px 20px;
   justify-content: space-between;
   align-items: center;
   background-color: #f2f5f6;
+  position: fixed;
+  top:0;
+  width: 100%
 }
 #trusto-logo {
   width: 100%;
@@ -354,6 +358,7 @@ nav {
   #hero {
     padding: 150px 60px; 
     flex-direction: row;
+    margin-top: 75px;
   }
   #hero-right-image-mobile,  #hero-left-image-mobile {
     display: none;
