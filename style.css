@@ -437,6 +437,9 @@ nav {
   padding: 50px 20px;
   display: flex;
  justify-content: space-between;
+ flex-direction: column;
+ align-items: center;
+ gap:32px
 }
 
 #benefits-section #video-head-wrap h1 {
@@ -457,14 +460,15 @@ nav {
 #benefits-section #benefits-heading-wrap  {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 #benefits-section #benefits-btn {
   background-color: var(--primary-color);
-  padding: 15px 26px;
+  padding: 8px 16px;
   border-radius: 28px;
   color: #ffffff;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
@@ -482,14 +486,14 @@ nav {
   color: var(--secondary-color);
   line-height: 30px;
   font-size: 1.25rem;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 #benefits-section .benefits-cards p {
   color: var(--secondary-color);
   line-height: 20px;
   font-size: 0.875rem;
-  text-align: center;
+  text-align: start;
   margin-top: 10px;
 }
 #benefits-section .benefits-cards img {
@@ -511,8 +515,24 @@ padding: 32px 24px
 #benefits-section .benefits-cards-wrap {
  display: flex;
  gap: 16px;
- align-items: start;
+ flex-direction: column;
+  
   }
+
+  #benefits-section #benefits-heading-wrap h1 {
+    color: var(--secondary-color);
+    line-height: 38px;
+    font-size: 1.875rem;
+    margin-top: 16px;
+  }
+  
+  #benefits-section #benefits-heading-wrap p {
+    color: var(--secondary-color);
+    line-height: 20px;
+    font-size: 0.875rem;
+    margin-top: 14px;
+  }
+
 
 
 
@@ -538,7 +558,10 @@ padding: 32px 24px
   #trusted-brands #brands-logo-wrp {
     gap: 34px;
   }
-  /* video section */
+  #benefits-section .benefits-cards-wrap  {
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+  }
 
 
 }
@@ -763,13 +786,12 @@ padding: 32px 24px
   #benefits-section {
     padding: 100px 120px;
     gap: 60px;
+ 
   }
 
   
 #benefits-section #benefits-heading-wrap  {
   display: flex;
-  align-items: start;
-  max-width: 256px;
   flex-direction: column;
 }
 
@@ -792,7 +814,7 @@ padding: 32px 24px
   #benefits-section .benefits-cards-wrap {
     flex-direction: row;
     flex-wrap: wrap;
-
+justify-content: center;
     }
 
     #benefits-section .benefits-cards h3 {
@@ -806,6 +828,11 @@ padding: 32px 24px
       margin-top: 10px;
       text-align: start;
     }
+    #benefits-section #benefits-btn {
+      padding: 16px 24px;
+      font-size: 1.125rem;
+  
+  }
   
  
 }
@@ -850,6 +877,19 @@ padding: 32px 24px
    #video-section {
     padding: 100px 100px 0;
   }
+  #benefits-section #benefits-heading-wrap  {
+    display: flex;
+    align-items: start;
+    max-width: 256px;
+    flex-direction: column;
+  }
+  #benefits-section {
+    flex-direction: row;
+    align-items: start;
+ 
+  }
+
+  
 }
 
 @media (min-width: 1366px) {
