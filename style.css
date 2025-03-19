@@ -535,7 +535,6 @@ padding: 32px 24px
 
 
 
-
 /* ------------------------------------- media queries------------------------------------- */
 
 /* Tablets (768px and up) */
@@ -833,6 +832,67 @@ justify-content: center;
       font-size: 1.125rem;
   
   }
+
+
+     /* building bridges section */
+     #building-bridges {
+      /* margin: 100px 0; */
+      display: flex;
+      align-items: center;
+      gap:77px
+    }
+  
+    #building-bridges .left-image-wrp {
+     max-width: 702px;
+     height:700px;
+     width: 100%;
+     overflow: hidden;
+    }
+  
+    #building-bridges .bridges-image {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+      aspect-ratio: 16/9;
+      max-width: 702px;
+    }
+  
+    #building-bridges h1 {
+     color:  var(--secondary-color);
+     line-height: 72px;
+     font-size: 3.75rem;
+   
+    }
+    #building-bridges p {
+      color:  var(--secondary-color);
+      line-height: 30px;
+      font-size: 1.25rem;
+      text-align: start;
+      margin-top:32px
+    }
+    #building-bridges .highlight {
+      color:  #92A7B0
+  
+    }
+    #building-bridges .bridges-content-wrp {
+      padding: 0 130px 0 0
+    }
+    #building-bridges .view-reports {
+      background-color: var(--primary-color);
+      padding: 18px 24px;
+      border-radius: 28px;
+      color: #ffffff;
+      font-size: 1.125rem;
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      margin-top: 32px;
+    }
+  
   
  
 }
