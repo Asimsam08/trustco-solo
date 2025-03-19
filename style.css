@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Root CSS Variables for Colors */
+:root {
+    --primary-color: #043A53;
+    --secondary-color: #12141D;
+    --accent-color: #F0B73F;
+    --text-color: #12141D;
+    --background-color: #FFFFFF;
+}
+
+/* Global Font Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 16px;
+    padding: 16px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+h1 { font-size: 4rem;}
+h2 { font-size: 3.75rem; }
+h3 { font-size: 2.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Paragraphs */
+p {
+    margin-bottom: 16px;
+    font-size : 1.25 rem;
+    line-height: 32px
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Default Margin & Padding for Sections */
+section {
+    padding: 100px 150px;
+    margin: 20px 0;
+}
+
+
